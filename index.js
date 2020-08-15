@@ -11,3 +11,7 @@ app.get('/', function(request, response) {
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'))
 })
+
+exports.addTwoNumbers = function(number1, number2) {
+  return number1 + number2;
+}
